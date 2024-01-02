@@ -1,0 +1,13 @@
+.todoEditBtn {
+  width: 10rem;
+  background: #eef5ff;
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.todoEditBtn:hover {
+  background: #70a4bf;
+}
