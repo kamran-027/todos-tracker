@@ -9,11 +9,14 @@ function App({ setToken }) {
   const [todos, setTodos] = useState([]);
 
   const getTodos = async () => {
-    const todosJSON = await fetch(`http://localhost:3000/todos`, {
-      headers: {
-        Authorization: `${sessionStorage.getItem("token")}`,
-      },
-    });
+    const todosJSON = await fetch(
+      `https://todos-tracker-0fee.onrender.com/todos`,
+      {
+        headers: {
+          Authorization: `${sessionStorage.getItem("token")}`,
+        },
+      }
+    );
     const todos = await todosJSON.json();
     setTodos(todos.todos);
   };

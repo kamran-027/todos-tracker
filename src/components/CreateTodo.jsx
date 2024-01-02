@@ -5,7 +5,7 @@ export default function CreateTodo({ getTodos, setToken }) {
   const [description, setDescription] = useState("");
 
   const postTodo = async (id) => {
-    await fetch(`http://localhost:3000/todo`, {
+    await fetch(`https://todos-tracker-0fee.onrender.com/todo`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

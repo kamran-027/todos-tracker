@@ -2,7 +2,7 @@ import "./Todos.css";
 
 export default function Todos({ todos, getTodos }) {
   const markTodo = async (id) => {
-    await fetch(`http://localhost:3000/completed`, {
+    await fetch(`https://todos-tracker-0fee.onrender.com/completed`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
